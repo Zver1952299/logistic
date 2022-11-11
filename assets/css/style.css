@@ -29,6 +29,12 @@ ul, ol {
     list-style: none;
 }
 
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 
 /* Container */
 
@@ -466,4 +472,74 @@ ul, ol {
 
 .reviews__content p:first-child {
     text-indent: 20px;
+}
+
+
+/* Benefits */
+
+.benefits {
+    display: flex;
+}
+
+.benefits__col {
+    width: 50%;
+}
+
+.benefits__list {
+    width: 100%;
+    max-width: 370px;
+    padding-left: 50px;
+    position: relative;
+
+    background-image: linear-gradient(to bottom, #fff 40%, #A5A5A5 40%);
+    background-size: 2px 35px;
+    background-repeat: repeat-y;
+    background-position: left 12px top;
+}
+
+.benefits__list::before,
+.benefits__list::after {
+    content: '';
+    display: block;
+    width: 26px;
+    height: 36px;
+
+    background-color: #fff;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.benefits__list::before {
+    background-image: url('../images/pin-start.svg'); 
+
+    top: 0;
+}
+
+.benefits__list::after {
+    background-image: url('../images/pin-end.svg'); 
+
+    bottom: 0;
+}
+
+.benefits__list-item:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.benefits__list-title {
+    margin-bottom: 12px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+    color: #2C2C2C;
+    font-weight: 900;
+}
+
+.benefits__list-text {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #585858;
 }
