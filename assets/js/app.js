@@ -99,7 +99,7 @@ $(function() {
     $('.modal').on("click", function() {
         const modal = $(this);
 
-        modalClose(modal);        
+        modalClose(modal);
     });
 
     $('.modal__content').on("click", function(event) {
@@ -117,6 +117,46 @@ $(function() {
             modal.removeClass('show'); 
         }, 200);
     }
+
+
+
+    // Slick slider =====
+    // ====================================
+
+    // Intro slider =======================
+    const introSlider = $("#introSlider");
+
+    introSlider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        autoplay: true,
+        autoplaySpeed: 10000,
+        speed: 5000
+    });
+
+    $('#introSliderPrev').on("click", function() {
+        introSlider.slick('slickPrev');
+    });
+
+    $('#introSliderNext').on("click", function() {
+        introSlider.slick('slickNext');
+    });
+
+
+    // Reviews slider =======================
+    const reviewsSlider = $("#reviewsSlider");
+
+    reviewsSlider.slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+        speed: 500
+    });
 });
 
 

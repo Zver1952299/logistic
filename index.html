@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>CenterLogistic</title>
 </head>
@@ -41,6 +42,11 @@
 
     <!-- Intro -->
     <div class="intro" id="intro">
+        <div class="intro__slider" id="introSlider">
+            <img class="intro__slider-photo" src="assets/images/intro-bg.jpg" alt="">
+            <img class="intro__slider-photo" src="assets/images/intro-bg2.jpg" alt="">
+        </div>
+        
         <div class="container">
             <div class="intro__inner">
 
@@ -74,6 +80,11 @@
                         <span class="intro__title-amp">&amp;</span>
                         Trans<br>Logistic
                     </h1>
+                </div>
+
+                <div class="intro__slider-arrows">
+                    <button class="intro__slider-btn intro__slider-btn--prev" type="button" id="introSliderPrev">Prev</button>
+                    <button class="intro__slider-btn intro__slider-btn--next" type="button" id="introSliderNext">Next</button>
                 </div>
                 
             </div><!-- /.intro__inner -->
@@ -184,9 +195,8 @@
                 </div><!-- /.clients__logos -->
 
                 <div class="clients__reviews">
-                    <div class="reviews">
+                    <div class="reviews" id="reviewsSlider">
                         <div class="reviews__item">
-
                             <div class="reviews__header">
                                 <img class="reviews__photo" src="https://place-hold.it/100" alt="">
                                 <div class="reviews__header-content">
@@ -200,8 +210,23 @@
                                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iusto impedit voluptatem reprehenderit dolorum! Doloribus, ad quaerat dolor quos nam corrupti rerum similique tempora repellat nobis velit facere ipsa vitae.</p>
                             </div>
                         </div>
-                    </div>
-                </div>
+
+                        <div class="reviews__item">
+                            <div class="reviews__header">
+                                <img class="reviews__photo" src="https://place-hold.it/100" alt="">
+                                <div class="reviews__header-content">
+                                    <div class="reviews__name">Jack Smith</div>
+                                    <div class="reviews__company">FOX Hub CEO</div>
+                                </div>
+                            </div>
+
+                            <div class="reviews__content">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iusto impedit voluptatem reprehenderit dolorum! Doloribus, ad quaerat dolor quos nam corrupti rerum similique tempora repellat nobis velit facere ipsa vitae.</p>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam iusto impedit voluptatem reprehenderit dolorum! Doloribus, ad quaerat dolor quos nam corrupti rerum similique tempora repellat nobis velit facere ipsa vitae.</p>
+                            </div>
+                        </div>
+                    </div><!-- /.reviews -->
+                </div><!-- /.clients__reviews -->
             </div><!-- /.clients -->
 
             <button class="btn btn--orange btn--shadow" type="button" data-modal="#becomeClientModal">
@@ -477,6 +502,7 @@
 
     <!-- Javascript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
     <script src="assets/js/app.js"></script>
 
 </body>
