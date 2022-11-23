@@ -1,5 +1,28 @@
 $(function() {
 
+
+
+    // Nav toggle on mobile ====================
+
+    const navToggle = $('#navToggle');
+    const nav = $('#nav');
+
+    navToggle.on("click", function(event) {
+        event.preventDefault();
+
+        $('body').toggleClass('show-nav');
+        $(this).toggleClass('active');
+        nav.toggleClass('show');0
+    });
+
+    $(window).on("resize", function() {
+        $('body').removeClass('show-nav');
+        navToggle.removeClass('active');
+        nav.removeClass('show');
+    });
+
+
+
     const intro = $("#intro");
     const header = $("#header");
     let introH = intro.innerHeight();
@@ -37,6 +60,10 @@ $(function() {
 
         const scrollEl = $(this).data("scroll");
         const scrollElPos = $(scrollEl).offset().top;
+        
+        $('body').removeClass('show-nav');
+        navToggle.removeClass('active');
+        nav.removeClass('show');
 
         $("html, body").animate({
             scrollTop: scrollElPos - headerH
@@ -45,6 +72,7 @@ $(function() {
 
 
     // ScrollSpy =====================================
+
     const windowH = $(window).height();
     scrollSpy(scrollTop); 
 
@@ -74,6 +102,7 @@ $(function() {
 
 
     // Modal =========================================
+
     $("[data-modal]").on("click", function(event) {
         event.preventDefault();
         const modal = $(this).data('modal');
@@ -124,6 +153,7 @@ $(function() {
     // ====================================
 
     // Intro slider =======================
+
     const introSlider = $("#introSlider");
 
     introSlider.slick({
@@ -147,6 +177,7 @@ $(function() {
 
 
     // Reviews slider =======================
+    
     const reviewsSlider = $("#reviewsSlider");
 
     reviewsSlider.slick({
