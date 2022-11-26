@@ -215,7 +215,7 @@ body.show-nav .header {
     height: 100%;
     overflow: hidden;
     
-    background: #04222a url("../images/intro-bg.jpg") no-repeat center;
+    background: #04222a url("../images/slider/slide-1.jpg") no-repeat center;
     background-size: cover;
 
     position: absolute;
@@ -1443,8 +1443,8 @@ body.show-nav .header {
     /* Nav */
     .nav {
         width: 100%;
-        height: auto;
-        min-height: calc(100vh - 50px);
+        height: calc(100vh - 50px);
+        overflow: auto;
         flex-direction: column;
         padding-top: 9px;
 

@@ -115,7 +115,7 @@ $(function() {
                 transform: 'translateY(0)',
                 opacity: '1'
             });
-        });
+        }, 100);
     });
 
     $("[data-modal-close]").on("click", function(event) {

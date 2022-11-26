@@ -7,7 +7,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/aos.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicons/manifest.json">
+    <link rel="mask-icon" href="assets/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
     <title>CenterLogistic</title>
 </head>
 <body>
@@ -15,21 +25,21 @@
 <div class="page">
 
     <!-- Header -->
-    <header class="header header--dark">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__inner">
                 <a href="index.html">
                     <img src="assets/images/logo.svg" alt="CenterLogistic">
                 </a>
 
-                <nav class="nav">
+                <nav class="nav" id="nav">
                     <a class="nav__link" href="index.html">Home page</a>
                     <a class="nav__link" href="blog.html">Blog</a>
                     <a class="nav__link active" href="text.html">Privacy Policy</a>
                     <a class="nav__link" href="text2.html">Terms &amp; Conditions</a>
                 </nav>
 
-                <button class="burger" type="button">
+                <button class="burger" type="button" id="navToggle">
                     <img class="burger__icon" src="assets/images/burger.svg" alt="">
                 </button>
             </div>
@@ -38,7 +48,7 @@
 
 
     <!-- Intro -->
-    <div class="intro intro--text"></div>
+    <div class="intro intro--text" id="intro"></div>
 
 
     <!-- Text -->
@@ -95,9 +105,9 @@
             </address>
 
             <nav class="footer__nav">
-                <a href="#">Terms &amp; Contidions</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Our blog</a>
+                <a href="text2.html">Terms &amp; Contidions</a>
+                <a href="text.html">Privacy Policy</a>
+                <a href="blog.html">Our blog</a>
             </nav>
         </div>
     </footer>
@@ -105,9 +115,11 @@
 </div>
 
 
-<!-- Javascript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-<script src="assets/js/app.js"></script>
+    <!-- Javascript -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/app.js"></script>
 
 </body>
 </html>
